@@ -1,0 +1,993 @@
+
+
+html { /*عشان الانتقال يكون بطيء و ناعم */
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #FAF7F2;
+    color: #0f1d40;
+    
+    
+    
+
+}
+nav {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #0f1d40;
+    color:white;
+    font-family: Georgia, serif;
+  
+    
+}
+
+/* Logo + Name */
+.logoname {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    background-color: #E8DCC4;
+    color: #0f1d40;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Links */
+.Links {
+    display: flex;
+  
+    margin-left: auto;
+     position: fixed;
+      
+    top: 25px;
+    right: 30px;
+    gap: 25px;
+    z-index: 1000;
+    
+   
+}
+
+.Links a {
+    cursor: pointer;
+    transition: 0.3s;
+     color: #bda273;
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+
+/* Hover */
+.Links a:hover {
+    color: #E8DCC4;
+    transform: translateY(-2px);
+  
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 60px 10%;
+    background-color: #FAF7F2;
+    min-height: 350px;
+}
+
+.hero-text {
+       position: relative;
+    
+}
+
+.hero-leaf {
+    position: absolute;
+    width: 100px;
+    left: -90px;
+    top: 20px;
+}
+
+
+.hero-text p:first-child {
+    font-size: 25px;
+    font-family: cursive;
+    margin-bottom: 5px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin: 5px 0;
+    color: #0f1d40;
+}
+
+.hero-text h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #0f1d40;
+}
+
+.hero-text p:last-child {
+    font-size: 17px;
+}
+
+.hero-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #E8DCC4;
+}
+#about,
+#Experience {
+    
+    background-color: #E8DCC4;
+    padding: 30px;
+    border-left: 5px solid #0f1d40;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+      width: 45%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 2%;
+}
+.about-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-title img {
+    width: 200px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.about-title h2 {
+    margin: 0;
+}
+
+
+
+/* Hover */
+#about:hover,
+#Experience:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+.qualification-card {
+    background-color: #E8DCC4;
+    padding: 30px;
+    margin: 25px auto;
+    border-left: 5px solid #0f1d40;
+    border-radius: 15px;
+    max-width: 900px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.qualification-card:hover {
+    transform: translateY(-5px);
+}
+
+.qualification-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.qualification-text {
+    color: #0f1d40;
+}
+
+.qualification-text h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+#Qualification h2 {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+#Skills {
+    background-color: #FAF7F2;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* عنوان Skills */
+
+.skills-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.skills-title h2 {
+    color: #0f1d40;
+    margin: 0;
+    font-size: 28px;
+    position: relative;
+}
+
+/* الخط تحت Skills */
+
+.skills-title h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #0f1d40;
+    margin-top: 7px;
+}
+
+
+/* لوقو الترس */
+
+.skills-logo {
+    width: 45px;
+    height: 45px;
+    background-color: #0f1d40;
+    color: white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+
+/* البطاقات */
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+/* كل بطاقة */
+
+.Skills-card {
+    position: relative;
+
+    background-color: #E8DCC4;
+
+    width: 45%;
+    min-height: 170px;
+
+    padding: 25px;
+
+    border-left: 8px solid #0f1d40;
+    border-radius: 12px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+/* Hover */
+
+.Skills-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* الأيقونة داخل البطاقة */
+
+.card-icon {
+    width: 45px;
+    height: 45px;
+
+    background-color: #f1e6cf;
+    color: #0f1d40;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    
+}
+
+
+/* عناوين البطاقات */
+
+.Skills-card h3 {
+    color: #0f1d40;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
+/* القائمة */
+
+.Skills-card ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.Skills-card li {
+    color: #0f1d40;
+    margin-bottom: 7px;
+}
+
+
+/* الورقة */
+
+.leaf {
+    position: absolute;
+
+    right: 15px;
+    bottom: 5px;
+
+    font-size: 55px;
+    color: #bda273;
+
+    transform: rotate(-25deg);
+
+    opacity: 0.7;
+}
+
+#projects {
+    background-color: #FAF7F2;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+
+/* Projects title */
+
+.projects-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.projects-title h2 {
+    color: #0f1d40;
+    margin: 0;
+    font-size: 28px;
+}
+
+
+/* الخط تحت Projects */
+
+.projects-title h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background-color: #0f1d40;
+    margin-top: 7px;
+}
+
+
+/* اللوقو */
+
+.projects-logo {
+    width: 45px;
+    height: 45px;
+
+    background-color: #0f1d40;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+
+/* الكارد الكبير */
+
+.project-card {
+    background-color: #E8DCC4;
+
+    max-width: 1100px;
+    margin: 20px auto;
+
+    padding: 30px;
+
+    border-left: 8px solid #0f1d40;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+/* Hover */
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* النص */
+
+.project-info {
+    width: 45%;
+}
+
+.project-info h3 {
+    color: #0f1d40;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.project-info p {
+    color: #0f1d40;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.project-info strong {
+    color: #0f1d40;
+}
+
+
+/* الصور */
+
+.project-images {
+    width: 55%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+}
+
+.project-images img {
+    width: 100%;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    border-bottom: 3px solid #0f1d40;
+}
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.technologies span {
+    background-color: #FAF7F2;
+    color: #0f1d40;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+}
+#References {
+    position: relative;
+
+    background-color: #FAF7F2;
+
+    padding: 30px;
+
+    margin-top: 20px;
+
+    overflow: hidden;
+}
+
+
+/* عنوان References */
+
+.references-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.references-title h2 {
+    color: #0f1d40;
+
+    margin: 0;
+
+    font-size: 28px;
+}
+
+
+/* الخط تحت العنوان */
+
+.references-title h2::after {
+    content: "";
+
+    display: block;
+
+    width: 65px;
+    height: 3px;
+
+    background-color: #0f1d40;
+
+    margin-top: 7px;
+}
+
+
+/* اللوقو */
+
+.references-logo {
+    width: 45px;
+    height: 45px;
+
+    background-color: #0f1d40;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+}
+
+
+/* البطاقات */
+
+.references-container {
+    display: flex;
+
+    gap: 25px;
+
+    justify-content: center;
+}
+
+
+.reference-card {
+    position: relative;
+
+    background-color: #E8DCC4;
+
+    width: 45%;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #0f1d40;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+/* Hover */
+
+.reference-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* أيقونة الشخص */
+
+.reference-icon {
+    width: 45px;
+    height: 45px;
+
+    background-color: #f1e6cf;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+
+    flex-shrink: 0;
+}
+
+
+/* النص */
+
+.reference-card h3 {
+    color: #0f1d40;
+
+    margin: 0 0 5px;
+
+    font-size: 17px;
+}
+
+.reference-card p {
+    color: #0f1d40;
+
+    margin: 0;
+
+    font-size: 14px;
+}
+
+
+/* الورق على الطرف */
+
+.references-leaf {
+    position: absolute;
+
+    right: 15px;
+    bottom: -10px;
+
+    font-size: 75px;
+
+    color: #bda273;
+
+    transform: rotate(-20deg);
+
+    opacity: 0.7;
+}
+footer {
+    padding: 20px 30px;
+    background-color: #FAF7F2;
+}
+
+.contact-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background-color: #0f1d40;
+    color: white;
+
+    padding: 20px 35px;
+    border-radius: 15px;
+
+    min-height: 80px;
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+.contact-icon {
+    width: 45px;
+    height: 45px;
+
+    border: 2px solid white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+.contact-card h2 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.contact-line {
+    height: 35px;
+    width: 1px;
+    background-color: white;
+    margin: 0 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.connect-text {
+    margin-left: auto;
+    font-family: cursive;
+    font-size: 20px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.contact-leaves {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-left: 5px;
+}
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-info a:hover {
+    color: #E8DCC4;
+}
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logoname {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Links {
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 0;
+    }
+
+
+    /* Hero */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .hero-text h3 {
+        font-size: 20px;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+
+    /* About + Experience */
+    #about,
+    #Experience {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    #about h2,
+    #Experience h2 {
+        font-size: 24px;
+    }
+
+    #about p,
+    #Experience p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+}
+@media (max-width: 768px) {
+
+    #Qualification {
+        padding: 20px;
+    }
+
+    #Qualification h2 {
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+
+    .qualification-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .qualification-card img {
+        width: 100%;
+        max-width: 350px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .qualification-text h3 {
+        font-size: 20px;
+    }
+
+    .qualification-text p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+@media (max-width: 768px) {
+
+    #Skills {
+        padding: 20px;
+    }
+
+    .skills-title {
+        margin-left: 5px;
+    }
+
+    .skills-title h2 {
+        font-size: 25px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .Skills-card {
+        width: 100%;
+        min-height: 160px;
+        padding: 20px;
+    }
+
+    .skills-logo {
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+
+    .Skills-card h3 {
+        font-size: 18px;
+    }
+
+    .Skills-card li {
+        font-size: 15px;
+    }
+
+    .leaf {
+        font-size: 45px;
+    }
+}
+@media (max-width: 768px) {
+
+    #projects {
+        padding: 20px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .project-info {
+        width: 100%;
+    }
+
+    .project-info h3 {
+        font-size: 20px;
+    }
+
+    .project-images {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .project-images img {
+        height: 200px;
+    }
+}
+@media (max-width: 768px) {
+
+    footer {
+        padding: 15px;
+    }
+
+    .contact-card {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        gap: 12px;
+    }
+
+    .contact-card h2 {
+        font-size: 22px;
+    }
+
+    .contact-line {
+        display: none;
+    }
+
+    .contact-info {
+        width: 100%;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .contact-info p {
+        font-size: 12px;
+    }
+
+    .connect-text {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+   /* .contact-leaves {
+        width: 60px;
+        height: 60px;
+    }*/
+}
