@@ -135,18 +135,16 @@ nav {
 }
 #about,
 #Experience {
-    
     background-color: #E8DCC4;
     padding: 30px;
     border-left: 5px solid #0f1d40;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
-      width: 45%;
+
+    width: 85%;
     box-sizing: border-box;
-    display: inline-block;
-    vertical-align: top;
-    margin: 20px 2%;
+    margin: 40px auto;
 }
 .about-title {
     display: flex;
