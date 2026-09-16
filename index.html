@@ -4,33 +4,78 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> My Protfilio </title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="project.css">
 </head>
 <body>
-    <nav>
-        <div class="logoname"> 
-        <div class="logo">
-            AA
+   <nav class="navbar navbar-expand-lg fixed-top">
+
+    <div class="container-fluid">
+
+        <!-- Logo + Name -->
+        <a class="navbar-brand" href="#">
+            <div class="logoname">
+                <div class="logo">
+                    AA
+                </div>
+
+                <span class="name">
+                    Amani Alazzam
+                </span>
+            </div>
+        </a>
+
+
+        <!-- Hamburger -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <div class="navbar-nav ms-auto">
+
+                <a class="nav-link" href="#about">
+                    About
+                </a>
+
+                <a class="nav-link" href="#Experience">
+                    Experience
+                </a>
+
+                <a class="nav-link" href="#Qualification">
+                    Qualification
+                </a>
+
+                <a class="nav-link" href="#Skills">
+                    Skills
+                </a>
+
+                <a class="nav-link" href="#projects">
+                    Projects
+                </a>
+
+                <a class="nav-link" href="#References">
+                    References
+                </a>
+
+            </div>
+
         </div>
-        <span class="name"> 
-            Amani Alazzam
-        </span>
-        </div>
-       
-        <div class="Links">
 
-        <a href="#about">About</a>
+    </div>
 
-        <a href="#Experience">Experience</a>
-
-        <a href="#Qualification">Qualification</a>
-
-        <a href="#Skills">Skills</a>
-
-        <a href="#projects">Projects</a>
-
-        <a href="#References">References</a>
-    </nav>
+</nav>
     <section class="hero">
 
     <div class="hero-text">
@@ -52,40 +97,144 @@
         <div class="about-title">
     
    <img src="about logo.png" >
-    <h2>About</h2>
+    <h2>About Me </h2>
 </div>
     <p>
-         I am a Computer Science graduate and Web Development student
-        passionate about creating creative and user-friendly websites.
-        I enjoy learning new technologies and improving my skills
-        through practical projects. 
+     <p>
+    I am a Computer Science graduate and Web Development student
+    passionate about creating creative and user-friendly websites.
+    I enjoy learning new technologies and improving my skills
+    through practical projects.
+    I am interested in building responsive websites and exploring
+    modern web technologies. I always try to improve my knowledge,
+    develop my problem-solving skills, and turn ideas into useful
+    and visually appealing web experiences.
+</p>
     </p>
 
 </section>
 <section id="Experience">
-    <h2> Experience</h2>
-    <p>  
-        I gained practical experience through web development training
-        and academic projects. I have worked with HTML, CSS,
-        JavaScript, and other web technologies to build responsive
-        and interactive websites.
-    </p>
+
+    <div class="experience-title">
+        <div class="experience-logo">💼</div>
+
+        <div>
+            <h2>Experience</h2>
+            <div class="experience-line"></div>
+        </div>
+    </div>
+
+
+    <div class="experience-container">
+
+        <!-- Municipal Training -->
+        <div class="experience-card">
+
+            <div class="experience-icon">
+                🏢
+            </div>
+
+            <div class="experience-content">
+
+                <h3>Field Training – Municipality</h3>
+
+                <p class="experience-place">
+                    Practical Training
+                </p>
+
+                <p>
+                    I completed my field training at the municipality,
+                    where I gained practical experience in a professional
+                    work environment. This experience helped me improve
+                    my communication, teamwork, responsibility, and
+                    problem-solving skills.
+                </p>
+
+                <div class="experience-tags">
+                    <span>Teamwork</span>
+                    <span>Communication</span>
+                    <span>Problem Solving</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Orange Training -->
+        <div class="experience-card">
+       <div class="experience-icon">
+
+       <img src="logo.orange.png" alt="Orange Coding Academy Logo">
+        </div>
+
+            <div class="experience-content">
+
+                <h3>Web Development Training – Orange</h3>
+
+                <p class="experience-place">
+                    Orange Coding Academy
+                </p>
+
+                <p>
+                    I am currently participating in web development
+                    training at Orange Coding Academy. I am developing
+                    my skills in HTML, CSS, Bootstrap, JavaScript,
+                    and modern web development practices through
+                    practical projects and teamwork.
+                </p>
+
+                <div class="experience-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Bootstrap</span>
+                    <span>JavaScript</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
-<section id="Qualification">
-  
-    <h2> Qualification</h2>
+ <section id="Qualification">
+
+    <div class="qualification-title">
+
+        <div class="qualification-logo">🎓</div>
+
+        <div>
+            <h2>Qualification</h2>
+            <div class="qualification-line"></div>
+        </div>
+
+    </div>
+
     <div class="qualification-card">
-          <img src="Jadara University.jpg" alt="Jadara University">
-          
-           <div class="qualification-text">
-        <h3> Bachelor's Degree in Computer Science</h3>
-        <P>   
-             Jadara University
-        </P>
-        <p> 
-              Studied Computer Science with a focus on web development,
-                programming, and modern technologies.
-        </p>
+
+        <div class="qualification-text">
+
+         <h3>Bachelor's Degree in Computer Science</h3>
+
+    <p><strong>Jadara University</strong></p>
+
+    <p>
+        I graduated with a Bachelor's Degree in Computer Science
+        from Jadara University. During my studies, I developed a
+        strong foundation in programming, web development, databases,
+        and computer science concepts.
+    </p>
+
+    <p>
+        My academic journey helped me develop my problem-solving,
+        analytical, and teamwork skills. I also worked on academic
+        projects that gave me practical experience in designing
+        and developing web applications.
+    </p>
+        </div>
+
+        <img src="Jadara University.jpg" alt="Jadara University">
 
     </div>
 
@@ -145,147 +294,327 @@
 
 </section>
 
+
 <section id="projects">
 
+    <!-- Projects Title -->
     <div class="projects-title">
 
-        <div class="projects-logo">▣</div>
+        <div class="projects-logo">
+            💻
+        </div>
 
-        <h2>Projects</h2>
+        <div>
+            <h2>Projects</h2>
+            <div class="projects-line"></div>
+        </div>
 
     </div>
 
 
-    <div class="project-card">
+    <!-- Projects Container -->
+    <div class="projects-container">
 
-        <div class="project-info">
 
-            <h3> Depression Support Guide</h3>
+        <!-- Project 1 -->
+        <div class="project-card">
 
-            <p>
-                A web platform designed to provide support
-                and helpful information for people experiencing
-                depression.
-            </p>
+            <div class="project-info">
 
-            <strong>Technologies:</strong>
+                <div class="project-number">
+                    01
+                </div>
 
-            <div class="technologies">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>PHP</span>
-                <span>AI</span>
-                <span>Database</span>
+                <h3>Depression Support Companion</h3>
+
+                <p>
+                    A web-based project designed to provide support and
+                    initial awareness of depression symptoms through
+                    interactive chat, questionnaires, and recommendations.
+                </p>
+
+                <p>
+                    This project was developed as my graduation project
+                    and combines web technologies with AI-based interaction.
+                </p>
+
+
+                <!-- Technologies -->
+                <div class="technologies">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                    <span>AI</span>
+                    <span>Database</span>
+
+                </div>
+
+
+                <!-- Project Link -->
+                <a
+                    href="https://github.com/amanialazzam04/Depression-Support-Companion"
+                    target="_blank"
+                    class="project-btn">
+                    View Project
+                </a>
+
+            </div>
+
+
+            <!-- Project Images -->
+            <div class="project-images">
+
+                <img src="log in .jpeg" alt="Nafs Login Page">
+
+                <img src="chat page.jpeg" alt="Nafs Chat Page">
+
+                <img src="mood tracking page.jpeg" alt="Nafs Mood Tracking Page">
+
+                <img src="wellness page.jpeg" alt="Nafs Wellness Page">
+
             </div>
 
         </div>
 
 
-        <div class="project-images">
 
-            <img src="log in .jpeg" alt="Nafs Home Page">
+        <!-- Project 2 -->
+        <div class="project-card portfolio-project">
 
-            <img src="chat page.jpeg" alt="Nafs Mood Tracking">
+            <div class="project-info">
 
-            <img src="mood tracking page.jpeg" alt="Nafs Chat Page">
-             <img src="wellness page.jpeg" alt="Nafs wellness Page">
+                <div class="project-number">
+                    02
+                </div>
 
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    A responsive personal portfolio website created to
+                    showcase my education, experience, skills, projects,
+                    and professional references.
+                </p>
+
+                <p>
+                    The website focuses on a clean and creative design
+                    with responsive layouts for different screen sizes.
+                </p>
+
+
+                <!-- Technologies -->
+                <div class="technologies">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Bootstrap</span>
+
+                </div>
+
+
+                <!-- Portfolio Link -->
+                <a
+                    href="https://github.com/amanialazzam04/MyPortfolio"
+                    target="_blank"
+                    class="project-btn">
+                    View Portfolio
+                </a>
+
+            </div>
+
+
+            <!-- Portfolio Visual -->
+            <div class="portfolio-visual">
+
+                <div class="portfolio-window">
+
+                    <div class="window-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="window-content">
+
+                        <div class="mini-logo">
+                            AA
+                        </div>
+
+                        <h4>Amani Alazzam</h4>
+
+                        <p>
+                            Web Development Student
+                        </p>
+
+                        <div class="mini-lines">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
     </div>
 
 </section>
+
+</section>
+
 <section id="References">
 
+    <!-- References Title -->
     <div class="references-title">
 
-        <div class="references-logo">♟</div>
+        <div class="references-logo">
+            ♟
+        </div>
 
-        <h2>References</h2>
+        <div>
+            <h2>References</h2>
+            <div class="references-line"></div>
+        </div>
 
     </div>
 
 
+    <!-- References Container -->
     <div class="references-container">
 
+
+        <!-- Anfal -->
         <div class="reference-card">
 
-            <div class="reference-icon">👤</div>
+            <div class="reference-icon">
+                👤
+            </div>
 
-            <div>
-                <h3>Dr. Nadeer Gharaibeh</h3>
-                <p>Graduation Project Discussion Committee</p>
-                  <p>Email: nadeergharaibeh@.com</p>
+            <div class="reference-info">
 
-                <p>Phone: 079 123 4567</p>
+                <h3>Anfal Dherat</h3>
+
+                <p>
+                    Orange Coding Academy
+                </p>
+
+                <div class="reference-links">
+
+                    <a href="mailto:gt.anfal.daharat@orange.com">
+                        Email
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/anfal-dherat/"
+                        target="_blank">
+                        LinkedIn
+                    </a>
+
+                </div>
+
             </div>
 
         </div>
 
 
+        <!-- Batool -->
         <div class="reference-card">
 
-            <div class="reference-icon">👤</div>
+            <div class="reference-icon">
+                👤
+            </div>
 
-            <div>
-                <h3>Dr. Mousa Al-Widian</h3>
-                <p>Field Training Supervisor</p>
+            <div class="reference-info">
 
-                <p>Email: mousaِAlwidinan65@.com</p>
+                <h3>Batool Aldalki</h3>
 
-                <p>Phone: 078 987 6543</p>
+                <p>
+                    Orange Coding Academy
+                </p>
+
+                <div class="reference-links">
+
+                    <a href="mailto:gt.batool.aldalki@orange.com">
+                        Email
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/batool-walid-b33894228"
+                        target="_blank">
+                        LinkedIn
+                    </a>
+
+                </div>
+
             </div>
 
         </div>
 
     </div>
 
-    <div class="references-leaf">❧</div>
-
 </section>
-<footer>
-    <div class="contact-card">
+```
 
-        <div class="contact-icon">
-            ✉
+<footer class="py-4 mt-4">
+
+```
+<div class="container">
+
+    <div class="row align-items-center">
+
+        <!-- Name -->
+        <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+            <h4 class="footer-name">Amani Alazzam</h4>
+            <p class="mb-0">Web Development Student</p>
         </div>
 
-        <h2>Contact Me</h2>
-
-        <div class="contact-line"></div>
-
-        <div class="contact-info">
-            <p>
+        <!-- Contact -->
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+            <p class="mb-1">
                 <strong>Email:</strong>
                 amanialazzam713@gmail.com
             </p>
 
-            <p>
+            <p class="mb-1">
                 <strong>Phone:</strong>
                 0779600752
             </p>
-               <p>
-        <strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/amani-azzam-57359936a/" target="_blank"> <!--بيفتح LinkedIn في تبويب جديد بدل ما يطلعك من الـPortfolio.-->
-            Amani Alazzam
-        </a>
-    </p>
         </div>
 
-        <div class="connect-text">
-            Let's<br>
-            Connect ♡
-        </div>
+        <!-- Social -->
+        <div class="col-md-4 text-center text-md-end">
 
-        <img src="OIP.webp" alt="Decorative leaves" class="contact-leaves">
+            <p class="mb-2">Let's Connect</p>
+
+            <a href="https://www.linkedin.com/in/amani-azzam-57359936a/"
+               target="_blank"
+               class="footer-link">
+                LinkedIn
+            </a>
+
+        </div>
 
     </div>
+
+    <hr>
+
+    <p class="text-center mb-0 footer-copy">
+        © 2026 Amani Alazzam. All Rights Reserved.
+    </p>
+
+</div>
+```
+
 </footer>
 
-            
-    
+
+          
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     
 
