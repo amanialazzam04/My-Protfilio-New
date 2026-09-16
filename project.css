@@ -170,11 +170,21 @@ nav {
     box-sizing: border-box;
     margin: 40px auto;
 }
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    background-color: #FAF7F2;
+    padding: 70px 0;
+}
+
+/* About Title */
 .about-title {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .about-title img {
@@ -188,16 +198,156 @@ nav {
     font-size: 34px;
     margin: 0;
 }
-
-.about-line {
-    width: 60px;
-    height: 3px;
-    background-color: #0f1d40;
-    margin-top: 7px;
+.about-title p {
+    color: #0f1d40;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
-#about p {
-    font-size: 19px;
+
+
+
+/* Main About Container */
+.container-about {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+}
+
+
+/* =========================
+   FIRST BOX
+========================= */
+
+.square1-about {
+    background-color: #E8DCC4;
+    padding: 35px;
+    border-left: 5px solid #0f1d40;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.square1-about:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.square1-about h2 {
+    color: #0f1d40;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.square1-about p {
+    color: #000;
+    font-size: 18px;
     line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =========================
+   SECOND BOX
+========================= */
+
+.square2-about {
+    background-color: #E8DCC4;
+    padding: 30px;
+
+    border: 1px solid #0f1d40;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.square2-about:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.square2-about p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+    padding: 16px 0;
+    margin: 0;
+
+    border-bottom: 1px solid rgba(15, 29, 64, 0.2);
+}
+
+.square2-about p:last-child {
+    border-bottom: none;
+}
+
+.square2-about span {
+    color: #0f1d40;
+    font-weight: bold;
+}
+
+.square2-about strong {
+    color: #000;
+    text-align: right;
+}
+
+
+/* =========================
+   THIRD BOX
+========================= */
+
+.square3-about {
+    grid-column: 1 / 3;
+
+    background-color: #0f1d40;
+    color: #E8DCC4;
+
+    padding: 25px;
+    border-radius: 18px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Steps */
+.about-step {
+    padding: 15px;
+}
+
+.about-step h3 {
+    color: #E8DCC4;
+    margin-bottom: 10px;
+}
+
+.about-step b {
+    color: white;
+}
+
+.about-step hr {
+    border: none;
+    height: 2px;
+    background-color: #E8DCC4;
+    margin: 10px 0 15px;
+}
+
+.about-step p {
+    color: #E8DCC4;
+    line-height: 1.6;
+    margin: 0;
 }
 #Experience {
     background-color: #FAF7F2;
@@ -1297,31 +1447,168 @@ footer hr {
 
     /* ===== About ===== */
 
-    #about {
-        width: 92%;
-        padding: 25px;
-        margin: 20px auto;
+ @media (max-width: 768px) {
+
+    /* =========================
+       ABOUT - MOBILE
+    ========================= */
+
+    .about {
+        width: 100%;
+        padding: 40px 0;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
+    /* About Title */
+
     .about-title {
+        width: 92%;
+        margin: 0 auto 25px;
+        display: flex;
+        align-items: center;
         gap: 8px;
+        box-sizing: border-box;
     }
 
     .about-title img {
-        width: 90px;
-        height: 50px;
+        width: 80px;
+        height: 45px;
+        object-fit: contain;
+        flex-shrink: 0;
     }
 
     .about-title h2 {
         font-size: 27px;
+        margin: 0;
     }
 
-    #about p {
-        font-size: 17px;
+
+    /* Main Container */
+
+    .container-about {
+        width: 92%;
+        margin: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 18px;
+        box-sizing: border-box;
+    }
+
+
+    /* =========================
+       FIRST BOX
+    ========================= */
+
+    .square1-about {
+        width: 100%;
+        padding: 22px;
+        box-sizing: border-box;
+
+        border-left: 5px solid #0f1d40;
+        border-radius: 15px;
+    }
+
+    .square1-about h2 {
+        font-size: 22px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .square1-about p {
+        font-size: 15px;
         line-height: 1.7;
+
+        /* يمنع الكلام من الخروج */
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
 
 
+    /* =========================
+       SECOND BOX
+    ========================= */
+
+    .square2-about {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+
+        border-radius: 15px;
+    }
+
+    .square2-about p {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 10px;
+        padding: 13px 0;
+        margin: 0;
+
+        box-sizing: border-box;
+
+        font-size: 14px;
+    }
+
+    .square2-about span {
+        flex-shrink: 0;
+    }
+
+    .square2-about strong {
+        text-align: right;
+
+        /* يمنع الاسم أو الكلام من الخروج */
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+
+    /* =========================
+       THIRD BOX
+    ========================= */
+
+    .square3-about {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 5px;
+
+        border-radius: 15px;
+    }
+
+    .about-step {
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .about-step h3 {
+        font-size: 19px;
+        margin-bottom: 8px;
+    }
+
+    .about-step p {
+        font-size: 14px;
+        line-height: 1.6;
+
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .about-step hr {
+        margin: 8px 0 12px;
+    }
+
+}
     /* ===== Experience ===== */
 
     #Experience {
@@ -1521,4 +1808,4 @@ footer hr {
 
 
 
-
+}
